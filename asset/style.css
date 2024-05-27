@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');port url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 110vh;
+    width: 100%;
+    background-image: linear-gradient(-70deg, #813747 53%, #813747 100%);
+    font-family: 'Space Mono', monospace;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 20px 30px;
+    margin:auto;
+    text-align: center;
+}
+
+.logo {
+    padding: 20px 0;
+    font-size: 50px;
+    color:  #d6aeb1;
+}
+
+.logo:hover {
+    color: #2978a7;
+    transition: scale(1.05);
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #00ffff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #ff0099;
+}
+
+input {
+    color: #bd8307;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+}
+
+input[type="file"]::file-selector-button{
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Space Mono', monospace;
+    outline: none;
+    padding: 10px 20px;
+    border-color: #010e0e;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+input[type="file"]::file-selector-button:hover {
+    /* color: #ff0099; */
+    border-color: #ff0099;
+}
+
+.custom-select {
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Space Mono', monospace;
+    outline: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-color: #080806;
+    border-radius: 5px;
+}
+
+.custom-select:hover {
+    /* color: #ff0099; */
+    border-color: #ff0099;
+}
+
+
+option {
+    color: #0e0f0f;
+    font-family: 'Space Mono', monospace;
+}
+
+.select-items {
+    background-color: #a7021e;
+}
+
+
+.button {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+button {
+    border-color: #010a0c;
+    background-color: transparent;
+    color: #00ffff;
+    font-size: 18px;
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+button:hover {
+    /* color: #ff0099; */
+    border-color: #ff0099;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+li {
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    font-size: 18px;
+}
+
+
+#timedate {
+    text-align: left;
+    color: #00ffff;
+    padding-top: 30px;
+  }
+  
+  .background {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  @media (max-width: 480px) {
+    .logo {
+        font-size: 90px;
+    }
+
+    li {
+        font-size: 50px;
+    }
+  }
